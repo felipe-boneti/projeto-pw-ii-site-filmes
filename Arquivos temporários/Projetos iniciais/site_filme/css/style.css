@@ -1,0 +1,293 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    background-color: #332E2E;
+  }
+  
+  header {
+    background-color: #bd6c34;
+    color: #fff;
+    padding: 10px 20px;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+   
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  h3 {
+    color: #fff;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    
+  }
+  
+  a {
+    color: #000; 
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .movie-list {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  
+  .movie {
+    width: calc(33.33% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #bd6c34;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    
+  }
+  
+  .movie img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  
+  .movie h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .movie p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .movie a {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #bd6c34;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  p {
+    text-align: center;
+    color: #f1e1e1;
+  }
+  
+  /* form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  label {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 18px;  tamanho da fonte das etiquetas 
+    margin-right: 10px;
+    color: #ffffff;  cor do texto das etiquetas 
+    vertical-align: top;
+  } 
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    vertical-align: top;
+    color: #000;
+  }
+  
+  input[type="submit"] {
+    background-color: #4a3e3a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+  } */
+
+  .contato h3{
+    font-weight: lighter;
+    color: #ffffff;
+  }
+  
+  /* Estilo do Formulario "CONTATO" */
+
+  .main-cadastro{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-cadastro{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .left-cadastro > h1 {
+    padding: 10px 10px;
+    font-size: 3vw;
+    color: #bd6c34;
+    font-weight: 700;
+  }
+
+  .left-cadastro-img{
+    width: 35vw;
+  }
+
+  .right-cadastro{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-cadastro{
+    width: 500px;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 20px;
+    background: #bd6c34;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #d8d8d8;
+  }
+
+  .card-cadastro > h1 {
+    color: #ffffff;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .textfield{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+  }
+
+  .textfield > input, textarea{
+    width:100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #ffffff;
+    color: #bd6c34;
+    font-size: 13pt;
+    box-shadow: 0px 10px 20px #9c5726;
+    outline: none;
+    box-sizing: border-box;
+  }
+
+  .textfield > label {
+    color: #ffffff;
+    margin-bottom: 5px;
+    font-size: 16pt;
+    font-weight: 600;
+  }
+
+  .textfield > input, textarea::placeholder{
+    color:#bd6c34;
+  }
+
+  .btnforms{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  .btn-enviar{
+    padding: 10px 0px;
+    width: 150px;
+    color:#bd6c34;
+    background: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    margin: 15px 15px;
+  }
+
+  .btn-enviar > .textform{
+  Text-decoration: none;
+  color: #bd6c34;
+  }
+
+  .btn-Listar{
+    padding: 10px 0px;
+    width: 150px;
+    color:#bd6c34;
+    background: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    margin: 15px 15px;
+  }
+
+  .btn-Listar > .textform{
+    Text-decoration: none;
+    color: #bd6c34;
+  }
+ /* Fim Estilo do Formulario "CONTATO" */
