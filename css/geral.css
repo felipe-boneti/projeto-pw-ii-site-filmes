@@ -3,6 +3,7 @@ body{
     font-size: 12pt;
     text-align: center;
     overflow-x: hidden;
+    font-family: 'Nunito', sans-serif !important;
 }
 
 .header{
@@ -13,16 +14,26 @@ body{
     height: 70px;
     top: 0;
     background-color: #bd6c34;
+    font-size: 16pt;
 }
 
 .logo{
     position: relative;
-    left: 10px;
-    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    height: 100%;
+    width: 300px;
+}
+
+.logo img{
+    position: relative;
+    height: 70%;
     transition: 0.2s;
 }
 
-.logo:hover{
+.logo img:hover{
     transform: scale(1.1);
 }
 
@@ -42,7 +53,7 @@ body{
 
 .header a{
     color: white;
-    font-weight: bold;
+    font-weight: bolder;
     transition: 0.2s;
     padding: 0 15px;
     text-decoration: none;
@@ -55,11 +66,27 @@ body{
 
 #div_busca{
     position: absolute;
-    width: 100px;
-    height: 50px;
+    width: 500px;
+    height: 160px;
     top: 50px;
+    color: white;
     background-color: black;
+    padding: 20px;
     transition: 0.2s;
+    border-radius: 20px 0 20px 20px;
+}
+
+#div_busca b{
+    font-size: 14pt;
+}
+
+#div_busca input[type=text]{
+    padding: 5px;
+    margin: 15px auto;
+    border-radius: 5px;
+    position: relative;
+    width: 100%;
+    left: 0px;
 }
 
 .oculta{
