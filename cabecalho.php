@@ -26,14 +26,14 @@
     <div class="header">
         <div class="logo"><img src="img/logobranco.png"></div>
         <a href="index.php">Home</a>
-        <a href="filmes.php">Filmes</a>
+        <a href="lista_filmes.php">Todos os filmes</a>
         <a href="contato.php">Contato</a>
-        <img src="img/ico_busca.png" class="icone_busca" onclick="abrir_busca()">
+        <img src="img/ico_busca.png" id="ico_busca" class="icone_busca" onclick="abrir_busca()">
     </div>
 
     <div id="div_busca" class="oculta">
         <b>O que você está procurando?</b>
-        <form method="POST" action="pesquisa.php">
+        <form method="POST" action="lista_filmes.php">
             <input type="text" name="busca" placeholder="Digite..."> <br>
             <input type="submit" value="Buscar">
         </form>

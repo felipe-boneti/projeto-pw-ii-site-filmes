@@ -1,0 +1,11 @@
+.titulo{
+    position: relative;
+    top: 100px;
+    left: 20px;
+    color: white;
+    font-size: 20pt;
+}
+
+.titulo b{
+    color: rgb(189, 108, 52);
+}
