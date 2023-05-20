@@ -2,7 +2,7 @@
 
     include('conexao.php');
 
-    if(isset($_POST['titulo'])){
+    if(isset($_POST['id'])){
 
         $id = $_POST['id'];
 

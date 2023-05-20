@@ -24,11 +24,11 @@
 
 <body>
     <div class="header">
-        <div class="logo"><img src="img/logobranco.png"></div>
+        <div class="logo"><img src="img/site/logobranco.png"></div>
         <a href="index.php">Home</a>
         <a href="lista_filmes.php">Todos os filmes</a>
         <a href="contato.php">Contato</a>
-        <img src="img/ico_busca.png" id="ico_busca" class="icone_busca" onclick="abrir_busca()">
+        <img src="img/site/ico_busca.png" id="ico_busca" class="icone_busca" onclick="abrir_busca()">
     </div>
 
     <div id="div_busca" class="oculta">
