@@ -12,7 +12,8 @@
     $row['diretor'] = 'Gorō Taniguchi';
     $row['duracao'] = '115 min';
     $row['genero'] = 'Animação';
-    $row['sinopse'] = 'Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.';
+    $row['sinopse'] = 'Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.';
+    $row['link_trailer'] = 'https://www.youtube.com/embed/NDDU-_MwKHI';
 
     // ===============================================================================================================
 ?>
@@ -28,27 +29,14 @@
         </div>
 
         <div class="div3">
-            <table class="info">
-                <tr>
-                    <td><b>Ano:</b><?php echo $row['ano']; ?></td>
-                </tr>
-
-                <tr>
-                    <td><b>Diretor:</b><?php echo $row['diretor']; ?></td>
-                </tr>
-
-                <tr>
-                    <td><b>Duração:</b><?php echo $row['duracao']; ?></td>
-                </tr>
-
-                <tr>
-                    <td><b>Gênero:</b><?php echo $row['genero']; ?></td>
-                </tr>
-            </table>
+            <div><b>Ano: </b><?php echo $row['ano']; ?></div>
+            <div><b>Diretor: </b><?php echo $row['diretor']; ?></div>
+            <div><b>Duração: </b><?php echo $row['duracao']; ?></div>
+            <div><b>Gênero: </b><?php echo $row['genero']; ?></div>
         </div>
-        
     </div>
 
+    <iframe width="1000" height="562,50" src="<?php echo $row['link_trailer']; ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <?php
     include('rodape.php');
 ?>
