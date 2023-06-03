@@ -148,3 +148,16 @@ form{
 .visivel{
     right: 20px;
 }
+
+.conteudo{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 70px;
+    width: 100%;
+    height: calc(100% - 70px);
+    overflow: auto;
+    padding-bottom: 50px;
+
+    /* background-color: red; */
+}

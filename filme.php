@@ -14,6 +14,7 @@
     $row['genero'] = 'Animação';
     $row['sinopse'] = 'Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.';
     $row['link_trailer'] = 'https://www.youtube.com/embed/NDDU-_MwKHI';
+    $row['classificacao'] = 'livre';
 
     // ===============================================================================================================
 ?>
@@ -24,7 +25,7 @@
         </div>
 
         <div class="div2">
-            <div class="titulo"><?php echo $row['titulo']; ?></div>
+            <div class="titulo"><?php echo $row['titulo']; ?><img src="img/site/<?php echo $row['classificacao'] ?>.png"></div>
             <div class="sinopse"><?php echo $row['sinopse']; ?></div>
         </div>
 
