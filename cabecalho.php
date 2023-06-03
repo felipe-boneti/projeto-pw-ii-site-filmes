@@ -28,6 +28,7 @@
         <a href="index.php">Home</a>
         <a href="lista_filmes.php">Todos os filmes</a>
         <a href="contato.php">Contato</a>
+        <a href="login.php">Login</a>
         <img src="img/site/ico_busca.png" id="ico_busca" class="icone_busca" onclick="abrir_busca()">
     </div>
 
