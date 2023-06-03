@@ -11,8 +11,7 @@
     $row = $stmt ->fetch(PDO::FETCH_BOTH);
             
     if($row==""){
-        echo "Usuário e/ou senha inválido (s)";
-    }
+        header("location:login.php?mensagem=Usuário e/ou senha inválido(s)"); }
     else{
         echo "Usuário logado";
     }
