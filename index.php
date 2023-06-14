@@ -29,7 +29,7 @@
         <!-- Banners do carrosel -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="img/site/ban_lastchance.png" class="d-block w-100" alt="Last Chance U">
+                <img src="img/site/ban_red.png" class="d-block w-100" alt="Last Chance U">
             </div>
             <div class="carousel-item">
                 <img src="img/site/ban_corra.png" class="d-block w-100" alt="Corra">
