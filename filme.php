@@ -1,22 +1,19 @@
 <?php
+    include('conexao.php');
+
     $titulo_pagina = 'Cineblack - Filmes';
     $arquivo_css = '<link rel="stylesheet" type="text/css" href="css/filme.css">';
 
+    if(!isset($_GET['id'])){header('Location:index.php');}
+    $idFilme = $_GET['id'];
+
+    $stmt = $pdo->prepare("SELECT * FROM tbfilme LEFT JOIN tbgenero ON tbfilme.idGenero = tbgenero.idGenero WHERE idFilme = $idFilme");
+    $stmt ->execute();
+    $row = $stmt ->fetch(PDO::FETCH_BOTH);
+
+    if($row == ''){header('Location:index.php');}
+
     include('cabecalho.php');
-
-    // TEMPORARIO ====================================================================================================
-
-    $row['titulo'] = 'One Piece Film RED';
-    $row['poster'] = 'op_red.png';
-    $row['ano'] = '2022';
-    $row['diretor'] = 'Gorō Taniguchi';
-    $row['duracao'] = '115 min';
-    $row['genero'] = 'Animação';
-    $row['sinopse'] = 'Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.Luffy e sua equipe assistem a um show onde a cantora Uta não é outra senão a filha de Shanks.';
-    $row['link_trailer'] = 'https://www.youtube.com/embed/NDDU-_MwKHI';
-    $row['classificacao'] = '0';
-
-    // ===============================================================================================================
 ?>
 
     <div class="div_filme">
@@ -30,14 +27,14 @@
         </div>
 
         <div class="div3">
-            <div><b>Ano: </b><?php echo $row['ano']; ?></div>
+            <div><b>Ano: </b><?php echo $row['anoLancamento']; ?></div>
             <div><b>Diretor: </b><?php echo $row['diretor']; ?></div>
             <div><b>Duração: </b><?php echo $row['duracao']; ?></div>
             <div><b>Gênero: </b><?php echo $row['genero']; ?></div>
         </div>
     </div>
 
-    <iframe width="1000" height="562,50" src="<?php echo $row['link_trailer']; ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="1000" height="562,50" src="<?php echo $row['linkTrailer']; ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <?php
     include('rodape.php');
 ?>
