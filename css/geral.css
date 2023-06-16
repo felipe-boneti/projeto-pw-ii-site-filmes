@@ -11,6 +11,10 @@ form{
     margin: 0;
 }
 
+a{
+    text-decoration: none !important;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -57,7 +61,7 @@ form{
 
 .logo img{
     position: relative;
-    height: 70%;
+    height: 60%;
     transition: 0.2s;
 }
 

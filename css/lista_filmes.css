@@ -1,6 +1,6 @@
 .titulo{
-    position: relative;
-    top: 100px;
+    position: absolute;
+    top: 20px;
     left: 20px;
     color: white;
     font-size: 20pt;
@@ -8,4 +8,47 @@
 
 .titulo b{
     color: rgb(189, 108, 52);
+}
+
+.conteudo{
+    padding: 50px 20px 0;
+}
+
+.filme_lista{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 300px;
+    height: 500px;
+
+    /* background-color: red; */
+}
+
+.filme_lista img{
+    position: relative;
+    max-height: 70%;
+    max-width: 80%;
+    transition: 0.2s;
+    border-radius: 40px;
+}
+
+.filme_lista b{
+    margin-top: 10px;
+    text-decoration: none;
+    color: rgb(189, 108, 52);
+    transition: 0.2s;
+    text-align: center;
+}
+
+.filme_lista:hover img{
+    max-height: 80%;
+    max-width: 90%;
+    border-radius: 0;
+}
+
+.filme_lista:hover b{
+    font-size: 18pt;
 }

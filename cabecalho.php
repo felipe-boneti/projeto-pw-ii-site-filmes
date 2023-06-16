@@ -24,8 +24,7 @@
 
 <body>
     <div class="header">
-        <div class="logo"><img src="img/site/logobranco.png"></div>
-        <a href="index.php">Home</a>
+        <div class="logo"><a href="index.php"><img src="img/site/logobranco.png"></a></div>
         <a href="lista_filmes.php">Todos os filmes</a>
         <a href="contato.php">Contato</a>
         <a href="login.php">Login</a>

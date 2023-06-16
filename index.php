@@ -29,13 +29,13 @@
         <!-- Banners do carrosel -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="img/site/ban_red.png" class="d-block w-100" alt="Last Chance U">
+                <a href="filme.php?id=1"><img src="img/site/ban_red.png" class="d-block w-100" alt="One Piece Film RED"></a>
             </div>
             <div class="carousel-item">
-                <img src="img/site/ban_corra.png" class="d-block w-100" alt="Corra">
+                <a href="filme.php?id=5"><img src="img/site/ban_corra.png" class="d-block w-100" alt="Corra"></a>
             </div>
             <div class="carousel-item">
-                <img src="img/site/ban_blues.png" class="d-block w-100" alt="Blues">
+                <a href="filme.php?id=6"><img src="img/site/ban_blues.png" class="d-block w-100" alt="Blues"></a>
             </div>
         </div>
 
