@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image:url("img/miranha.jpg");
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image:url("img/op.png");
+}
+
+.content{
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+}
+
+.content::before{
+    content: "";
+    position: absolute;
+    background-color: "";
+    width: 40%;
+    height: 100%;
+    background-color: #bc6d34;
+
+}
+
+
+.title2{
+    font-size: 30px;
+    font-weight: bold;
+    color: #bc6d34;
+}
+
+.title{
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.desc{
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+    line-height: 30px;
+}
+
+.atest{
+    color: #808080;
+    font-size: 14px;
+    margin: 8px 0;
+    text-align: center;
+}
+
+.btn {
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+    background-color: transparent;
+    margin-top: 10px;
+}
+
+.btn-second{
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 10px;
+    padding: 10px 0px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+    background-color: transparent;
+    width: 150px;
+    align-self: center;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+.btn:hover{
+    background-color: #ffffff;
+    color: #212121;
+}
+
+.btn-second:hover{
+    background-color: #bc6d34;
+    color: #212121;
+}
+
+.first-content {
+    display: flex;
+}
+
+
+
+.first-column{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+    background-color: #bc6d34;
+}
+
+.second-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin: 8px;
+}
+
+.form input{
+    height: 45px;
+    width: 100%;
+    border: 1px solid #212121;
+    background-color: transparent;
+    margin: 8px;
+    padding: 0 10px;
+    color: #bc6d34;
+}
+

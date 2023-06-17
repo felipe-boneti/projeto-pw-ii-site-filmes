@@ -1,29 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<?php
 
-    <form action="fazer_login.php" method="post">
-        <input type="text" name="txUsuario" placeholder="E-mail"/>
-        <input type="password" name="txSenha" placeholder="Senha" />
-        <input type="submit" value="Login" />
-    </form>
+    include('conexao.php');
 
-    <?php
+    if(isset($_POST['email']) && isset($_POST['senha'])){
+        $email = $_POST['email'];
+        $senha = $_POST['senha'];
+        
+        $stmt = $pdo->prepare("SELECT ativo FROM tbuser WHERE email = :email AND senha = :senha");
+        $stmt->bindParam(':email', $email);
+        $stmt->bindParam(':senha', $senha);
+        $stmt ->execute();
 
-    if(isset($_GET ['mensagem'])){
-        ?>
-            <div>
-                <p> <?php echo $_GET['mensagem']; ?> </p>
-            </div>    
-        <?php } ?>
-  
+        $row = $stmt ->fetch(PDO::FETCH_BOTH);
 
-    
-</body>
+        // print_r($row);die;
+
+        if($row['ativo'] == 1){
+            header('Location:cadastrar_filme.php');
+        } else{
+            header('Location:index.php');
+        }
+    }
+
+?>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>Cineblack - Login</title>
+        <link rel="stylesheet" href="logincadastro.css">
+
+    </head>
+    <body> 
+        <div class="container">
+            <div class="content first-content">
+                    
+                <div class="first-column">
+                    <h2 class="title"> Seja bem vindo a Cineblack!</h2>
+                    <p class="desc">Entrando pela primeira vez?    Clique no botão!</p>
+                    <a href="cadastro.php"> <button class="btn">Cadastra-se</button> </a>
+                </div>
+                
+                <div class="second-column">
+                    <h2 class="title2">Login</h2>
+                    <form class="form" method="POST" action="login.php">
+                        
+                        <input type="email" name="email" placeholder="Email">    
+                        <input type="password" name="senha" placeholder="Password">
+                                                
+                        <button class="btn-second">Entrar</button>
+                        <a class="atest" href="#">Esqueceu a senha?</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

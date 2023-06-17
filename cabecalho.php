@@ -26,8 +26,8 @@
     <div class="header">
         <div class="logo"><a href="index.php"><img src="img/site/logobranco.png"></a></div>
         <a href="lista_filmes.php">Todos os filmes</a>
-        <a href="contato.php">Contato</a>
-        <a href="login.php">Login</a>
+        <!-- <a href="contato.php">Contato</a> -->
+        <a href="login.php">Cadastrar filme</a>
         <img src="img/site/ico_busca.png" id="ico_busca" class="icone_busca" onclick="abrir_busca()">
     </div>
 
